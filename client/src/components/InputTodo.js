@@ -14,7 +14,7 @@ const InputTodo = () => {
                 body : JSON.stringify(body)
             } )
 
-            console.log(response);
+            window.location ="/";
             
         } catch (er) {
             console.error(er.message);
@@ -23,7 +23,7 @@ const InputTodo = () => {
 
     return (
     <Fragment>
-        <h1 className="text-center mt -5"> Pern Todo List</h1>
+        <h1 className="text-center mt-5"> Pern Todo List</h1>
         <form className="d-flex mt-5" onSubmit={onSubmitForm}>
             <input type="text" className="form-control" placeholder="Enter Todo" value={description} 
             onChange={ e => setdescription(e.target.value)} />
